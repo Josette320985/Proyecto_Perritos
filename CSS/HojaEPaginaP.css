@@ -1,0 +1,85 @@
+html {
+    font-family: Arial, sans-serif;/*Tipo de letra*/
+    background-color: #fcebcd;/*Color de fondo*/
+    padding-top: 90px;/*Establece un relleno o espacio interno en la parte superior del elemento*/
+    text-align: center;
+}
+
+header {
+    background-color: #fc988f;/*Para el color del encabezado*/
+    padding: 10px 20px;/*Establece el espacio interno (relleno) de un elemento (vertical horizontal)*/
+    position: fixed;/*Para crear menús de navegación que permanecen siempre visibles en la parte superior de la pantalla*/
+    top: 0;/*Distancia entre el borde superior del elemento y el borde superior de su bloque contenedor*/
+    left: 0;/*Margen izquierdo del elemento y el borde izquierdo de su bloque contenedor*/
+    width: 98%;/*Ancho del elemento conforme el ancho de su bloque contenedor*/
+    color: white;/*Color de letra*/
+    text-shadow: 3px 3px 5px #333;/*Crea una sombra oscura en el texto desplazada hacia abajo y a la derecha con un pequeño desenfoque*/
+}
+
+.header-container {
+    display: flex;/*Alinea*/
+    align-items: center;/*Aline a lo largo*/
+    width: 100%;
+}
+
+h2 {
+    font-size: 40px; /*Tamaño de la fuente */
+    color: #0e0d0d; 
+    margin-bottom: 20px; /*Espacio entre el título y el contenido siguiente */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /*Sombra ligera para dar relieve al texto */
+}
+
+.imagen_center {
+    text-align: center;
+}
+
+.logo {
+    height: 50px;/*Altura de la imagen*/
+    margin-right: 15px;/*Margen (espacio vacío) a la derecha*/
+}
+
+nav {
+    flex-grow: 1;/*Para indicar el espacio que compartiran los elementos*/
+    text-align: center;
+}
+
+nav a {
+    margin: 0 25px;
+    text-decoration: none;/* Sin decoración, para quitar la linea */
+    background-color: #f8796b;
+    padding: 10px 20px;
+    border-radius: 20px; /*Redondea todas las esquinas */
+    color: white;
+}
+
+/*Estilo del boton de Inicio*/
+.home-button {
+    display: flex;
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    align-items: center;
+    justify-content: center;
+    background: none;/*No mostrar fondo*/
+    border: none;/*No mostrar borde*/
+    cursor: pointer;/*Para cuando se ponga el cursor este cambie*/
+}
+
+.home-button img {
+    height: 50px; /* Ajusta el tamaño de la imagen */
+    cursor: pointer;
+}
+
+.home-button span {
+    font-size: 14px;
+    color: #fff; 
+    background-color: #f8796b;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 5px; /*Espacio entre la imagen y el texto */
+}
+
+/*Estilo del footer*/
+footer {
+    background-color: #fe8c81;
+    padding: 10px 20px;
+    text-align: center;
+}

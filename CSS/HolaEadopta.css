@@ -1,0 +1,149 @@
+html {
+    font-family: Arial, sans-serif;
+    background-color: #fcebcd;
+    padding-top: 90px;/*Establece un relleno o espacio interno en la parte superior del elemento*/
+    text-align: center;
+}
+
+header {
+    background-color: #fc988f;/*Para el color del encabezado*/
+    padding: 10px 20px;/*Establece el espacio interno (relleno) de un elemento (vertical horizontal)*/
+    position: fixed;/*Para crear menús de navegación que permanecen siempre visibles en la parte superior de la pantalla*/
+    top: 0;/*Distancia entre el borde superior del elemento y el borde superior de su bloque contenedor*/
+    left: 0;/*Margen izquierdo del elemento y el borde izquierdo de su bloque contenedor*/
+    width: 98%;/*Ancho del elemento conforme el ancho de su bloque contenedor*/
+    color: white;
+    text-shadow: 3px 3px 5px #333;/*Crea una sombra oscura en el texto desplazada hacia abajo y a la derecha con un pequeño desenfoque*/
+}
+
+.header-container {
+    display: flex;/*Alinea*/
+    align-items: center;/*Aline a lo largo*/
+    width: 100%;
+}
+
+h2 {
+    font-size: 40px; /* Tamaño de la fuente */
+    color: #0e0d0d; 
+    margin-bottom: 20px; /* Espacio entre el título y el contenido siguiente */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Sombra ligera para dar relieve al texto */
+
+}
+
+.logo {
+    height: 50px;/*Altura de la imagen*/
+    margin-right: 15px;/*Margen (espacio vacío) a la derecha*/
+}
+
+nav {
+    flex-grow: 1;/*Para indicar el espacio que compartiran los elementos*/
+    text-align: center;
+}
+
+nav a {
+    margin: 0 25px;
+    text-decoration: none;/* Sin decoración, para quitar la linea */
+    background-color: #f8796b;
+    padding: 10px 20px;
+    border-radius: 20px; /* Redondea todas las esquinas */
+    color: white;
+}
+
+/*Estilo del boton de Inicio*/
+.home-button {
+    display: flex;
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.home-button img {
+    height: 50px; /* Ajusta el tamaño de la imagen */
+    cursor: pointer;
+}
+
+.home-button span {
+    font-size: 14px;
+    color: #fff; /* Color del texto */
+    background-color: #f8796b;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 5px; /* Espacio entre la imagen y el texto */
+}
+
+/*Estilo de los h2*/
+.titulo {
+    background-color:#f1c3bf;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 50px;
+}
+
+h2 {
+    color: #f8796b;
+    font-size: 30px;
+}
+
+/* Estilos del formulario */
+.adoption-form {
+    background-color: rgb(248, 233, 233);
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.adoption-form label {
+    font-weight: bold;
+    color: #030202;
+}
+
+.adoption-form input, .adoption-form select, .adoption-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #c59e9e;
+    font-size: 15px;
+}
+
+.adoption-form input[type="radio"] {
+    width: auto;
+}
+
+.adoption-form button {
+    background-color: #f8796b;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 101%;
+    font-size: 18px;
+}
+
+.adoption-form button:hover {
+    background-color: #fc988f;
+}
+
+/* Estilos del video */
+#video {
+    margin: 0px 80px;  /* Añade márgenes automáticos para centrar la sección en la página */
+}
+
+#video iframe {
+    border: 5px solid #333; /* Marco de 5px de grosor y color gris oscuro */
+    border-radius: 10px;     /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave alrededor del video */
+}
+
+/*Estilo del footer*/
+footer {
+    background-color: #fe8c81;
+    padding: 10px 20px;
+    text-align: center;
+}
